@@ -2,11 +2,11 @@
 
 /* Variáveis */
 :root {
-    --primary-color: #026773;
-    --secondary-color: #3CA6A6;
-    --text-color: #024959;
-    --background-color: #F2E3D5;
-    --button-hover: #012E40;
+    --primary-color: #5c1d1d;
+    --secondary-color: #783737;
+    --text-color: #a80101;
+    --background-color: #601818;
+    --button-hover: #bf4949;
     --font-body: "Chocolate Classical Sans", serif;
     --font-titulo: "Rakkas", serif;
 }
@@ -40,7 +40,7 @@ img {
 /* Cabeçalho */
 header  {
     background: var(--primary-color);
-    color: white;
+    color: rgb(228, 121, 121);
     text-align: center;
     padding: 20px;
 }
@@ -61,8 +61,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
-    text-decoration; none;
+    color: rgb(155, 70, 70);
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -72,12 +72,12 @@ nav ul li a:hover{
 
 /*Seções principais */
 .conteudo {
-    background: white;
+    background: rgb(197, 153, 153);
     padding: 20px;
     margin: 20px auto;
     width: 80%;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.463);
 }
 
 /* Listas /
@@ -95,4 +95,26 @@ ul {
     padding: 10px;
     background: var(--secondary-color);
     color: var(--text-color);
+}
+ /* código omitido */
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
 }
